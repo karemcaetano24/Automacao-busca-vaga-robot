@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220223 23:55:34.821" rpa="false" schemaversion="2">
+<suite id="s1" name="Checkbox" source="c:\qaninja\robot\web\checkbox.robot">
+<test id="s1-t1" name="Marcando opção com id">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220223 23:55:36.278" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220223 23:55:36.273" endtime="20220223 23:56:02.063"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220223 23:56:02.068" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220223 23:56:02.067" endtime="20220223 23:56:02.945"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check-thor}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220223 23:56:02.972" level="FAIL">Resolving variable '${check-thor}' failed: Variable '${check}' not found.</msg>
+<status status="FAIL" starttime="20220223 23:56:02.950" endtime="20220223 23:56:02.972"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check-thor}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:02.976" endtime="20220223 23:56:02.977"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:02.980" endtime="20220223 23:56:02.981"/>
+</kw>
+<status status="FAIL" starttime="20220223 23:55:36.263" endtime="20220223 23:56:02.985">Resolving variable '${check-thor}' failed: Variable '${check}' not found.</status>
+</test>
+<test id="s1-t2" name="Marcando opção com CSS Selector">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220223 23:56:03.031" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220223 23:56:03.026" endtime="20220223 23:56:22.696"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220223 23:56:22.703" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220223 23:56:22.701" endtime="20220223 23:56:23.881"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check-iron}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220223 23:56:23.899" level="FAIL">Resolving variable '${check-iron}' failed: Variable '${check}' not found.</msg>
+<status status="FAIL" starttime="20220223 23:56:23.884" endtime="20220223 23:56:23.900"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check-iron}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:23.906" endtime="20220223 23:56:23.907"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:23.911" endtime="20220223 23:56:23.912"/>
+</kw>
+<status status="FAIL" starttime="20220223 23:56:03.017" endtime="20220223 23:56:23.916">Resolving variable '${check-iron}' failed: Variable '${check}' not found.</status>
+</test>
+<test id="s1-t3" name="Marcando opção com Xpath">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220223 23:56:23.991" level="INFO">Opening browser 'chrome' to base url 'https://training-wheels-protocol.herokuapp.com'.</msg>
+<status status="PASS" starttime="20220223 23:56:23.987" endtime="20220223 23:56:44.804"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}/checkboxes</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220223 23:56:44.812" level="INFO">Opening url 'https://training-wheels-protocol.herokuapp.com/checkboxes'</msg>
+<status status="PASS" starttime="20220223 23:56:44.810" endtime="20220223 23:56:46.658"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${check_panther}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220223 23:56:46.680" level="FAIL">Variable '${check_panther}' not found.</msg>
+<status status="FAIL" starttime="20220223 23:56:46.665" endtime="20220223 23:56:46.681"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>${check_panther}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:46.688" endtime="20220223 23:56:46.689"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220223 23:56:46.693" endtime="20220223 23:56:46.694"/>
+</kw>
+<tag>ironman</tag>
+<status status="FAIL" starttime="20220223 23:56:23.977" endtime="20220223 23:56:46.700">Variable '${check_panther}' not found.</status>
+</test>
+<status status="FAIL" starttime="20220223 23:55:34.841" endtime="20220223 23:56:46.734"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">ironman</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Checkbox">Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
